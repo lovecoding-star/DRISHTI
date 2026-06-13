@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap');
+
+:root {
+  --bg-primary: #04060E;
+  --bg-secondary: #080D1A;
+  --bg-card: #0D1424;
+  --bg-elevated: #121B2E;
+  --border: #1A2440;
+  --text-primary: #EEF2FF;
+  --text-secondary: #7B8DB0;
+  --text-muted: #3D4F6E;
+  --accent: #3B7BF6;
+  --critical: #F04040;
+  --critical-bg: rgba(240,64,64,0.08);
+  --high: #F07020;
+  --high-bg: rgba(240,112,32,0.08);
+  --medium: #D4A017;
+  --medium-bg: rgba(212,160,23,0.08);
+  --low: #22C566;
+  --low-bg: rgba(34,197,102,0.08);
+  --font-display: 'Rajdhani', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-data: 'IBM Plex Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,102,0.45); }
+  50% { box-shadow: 0 0 0 10px rgba(34,197,102,0); }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}

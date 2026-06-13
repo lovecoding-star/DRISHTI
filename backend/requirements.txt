@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+pandas
+scipy
+numpy
+networkx
+google-generativeai
+python-dotenv
+requests
+telethon
+scikit-learn
+aiofiles
+python-multipart
+openpyxl
+sqlalchemy
+aiosqlite
