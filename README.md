@@ -1,7 +1,7 @@
 # DRISHTI — Exam Integrity Intelligence Platform
 
 DRISHTI is a demo-ready AI-powered exam integrity platform built with a single FastAPI backend and a React frontend.
-https://drishti-vision--scriptsorceress.replit.app/:-DEPLOYED APP
+https://drishti-vision--scriptsorceress.replit.app/   :- DEPLOYED APP
 ## Structure
 
 - `backend/` — FastAPI application, data generation, threat simulation, Gemini fallback logic, alert storage
